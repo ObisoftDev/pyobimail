@@ -15,13 +15,9 @@ def onenteremail(bot:EmailBot=None,message:EmailMessage=None):
     reply_subject_file = ''
 
     if '/start' in text:
-        print('start comand')
-        reply = '👋 DeltaFile2Mail 👋\n\n'
-        reply+= 'Bot Para Descargar Archivos Desde Internet Directo A Tu Email,'
-        reply+= 'Los Archivos Con Mas De 15mb Se Enviaran En Partes\n\n'
-        reply+= 'Como Usar?\n'
-        reply+= 'Enviar Cualquier 🔗Link De Descarga🔗'
-        message.reply_file(file='logo.png',text=reply,subject=reply_subject_text)
+        reply = '👋 DeltaFile2Mail 👋\n'
+        #message.reply_file(file='logo.png',text=reply,subject=reply_subject_text)
+        message.reply_text(text=f'📤Subiendo Archivos...',subject=reply_subject_text)
         pass
 
 
