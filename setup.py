@@ -8,7 +8,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 #with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
 #    long_description = "\n" + fh.read()
 
-with open(os.path.join(here, "pyobigram", "version.py")) as fp:
+with open(os.path.join(here, "pyobimail", "version.py")) as fp:
     exec(fp.read())
 
 requires = []
@@ -16,11 +16,11 @@ with open(os.path.join(here, "requirements.txt"),'r') as fp:
     requires = str(fp.read()).split('\n')
 
 setup(
-    name="pyobigram",
+    name="pyobimail",
     version=__version__,  # noqa: F821
     author="ObisoftDev",
     author_email="obisoftdev@gmail.com",
-    packages=["pyobigram"],
+    packages=["pyobimail"],
     install_requires=requires,
     package_data={"": ["LICENSE"],},
     url="https://github.com/ObisoftDev/pyobimail",
