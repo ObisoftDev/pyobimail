@@ -1,6 +1,11 @@
 # pyobimail
 mail library and bot mail development
 
+# INSTALL 
+```
+pip install pyobimail
+```
+
 # Bot Code Example
 ```
 import os
